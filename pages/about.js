@@ -1,10 +1,9 @@
-import NavBar from "../components/NavBar";
-
-export default function Potato() {
+const About = () => {
   return (
     <div>
-      <NavBar />
       <h1>About</h1>
     </div>
   );
-}
+};
+
+export default About;
