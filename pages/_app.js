@@ -1,19 +1,11 @@
-import NavBar from "../components/navbar";
+import Layout from "../components/Layout";
+import "../styles/globals.css";
 
 const App = ({ Component, pageProps }) => {
   return (
-    <>
-      <NavBar />
+    <Layout>
       <Component {...pageProps} />
-      <span>Hello(from _app.js)</span>
-      <style jsx global>
-        {`
-          a {
-            color: white;
-          }
-        `}
-      </style>
-    </>
+    </Layout>
   );
 };
 
