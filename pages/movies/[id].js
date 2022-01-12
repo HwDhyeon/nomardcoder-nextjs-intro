@@ -2,7 +2,11 @@ import { useRouter } from "next/router";
 
 const MovieDetail = () => {
   const router = useRouter();
-  return "Movie detail page. id: " + router.query.id;
+  return (
+    <div>
+      <h4>{router.query.title}</h4>
+    </div>
+  );
 };
 
 export default MovieDetail;
